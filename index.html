@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MoveNet Pose Detection</title>
+  <title>MoveNet</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>MoveNet Pose Detection</h1>
-  <video id="video" width="640" height="480" autoplay></video>
-  <canvas id="output" width="640" height="480"></canvas>
+  <h1>MoveNet Detector</h1>
+  <p>Este es un modelo de detección ultrarrápido y preciso que detecta 17 puntos claves del cuerpo.</p>
+  <button id="start-button">Iniciar MoveNet</button>
+  <div id="loading-message" style="display:none;">Cargando MoveNet...</div>
+  <canvas id="output" width="640" height="480" style="display:none;"></canvas>
 
   <!-- Required dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
