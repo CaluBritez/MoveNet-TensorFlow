@@ -32,3 +32,6 @@ p {
 canvas {
     border: 3px solid black;
 }
+#prueba {
+    display: none;
+}
